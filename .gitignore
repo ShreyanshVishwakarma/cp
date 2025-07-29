@@ -1,0 +1,25 @@
+# Build files
+/target/
+Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Output files (uncomment if you don't want to track them)
+# output.txt
+
+
+# Added by cargo
+
+/target
