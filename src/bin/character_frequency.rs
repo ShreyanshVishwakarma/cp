@@ -9,5 +9,5 @@ fn main() {
     let mut map: std::collections::HashMap<char, i32> = std::collections::HashMap::new();
     let s = String::from("hello wrold");
     calc_freq(s, &mut map);
-    println!("{:?}", map);
+    println!("{map:?}");
 }

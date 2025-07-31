@@ -17,6 +17,6 @@ fn main() {
     let mut map: std::collections::HashMap<i32, usize> = std::collections::HashMap::new();
     for i in 1..100 {
         let result = nth_fibo(i, &mut map);
-        println!(" the {i}th fibo number is : {}", result);
+        println!(" the {i}th fibo number is : {result:?}");
     }
 }
