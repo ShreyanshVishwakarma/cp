@@ -1,4 +1,4 @@
-fn second_largest<T: PartialOrd + Clone>(arr: &[T]) -> T {
+fn largest_number<T: PartialOrd + Clone>(arr: &[T]) -> T {
     let mut largest = arr[0].clone();
     for i in 1..arr.len() {
         if arr[i] > largest {
