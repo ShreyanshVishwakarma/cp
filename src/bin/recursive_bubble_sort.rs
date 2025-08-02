@@ -12,8 +12,7 @@ fn bubble_sort<T: PartialOrd>(arr: &mut [T], n: usize) {
             arr.swap(i, i + 1);
         }
     }
-    bubble_sort(arr, n - 1);
-}
+    bubble_sort(arr, n - 1); }
 
 fn main() {
     let mut arr: Vec<i32> = vec![2, 5, 7, 9, 0, 8, 6, 4, 2, 1];
