@@ -1,7 +1,7 @@
 use std::vec;
 
 fn union<T: PartialOrd + PartialEq + Clone>(arr1: &[T], arr2: &[T]) -> Vec<T> {
-    //
+    //using two pointer approach .... can also use hashset in rust std. Most idomatic way.
     let mut ptr1: usize = 0;
     let mut ptr2: usize = 0;
 
@@ -42,6 +42,6 @@ fn main() {
     let arr1 = vec![1, 2, 3, 4, 4, 5, 5, 6, 7];
     let arr2 = vec![1, 1, 2, 2, 3, 4, 6, 7, 8, 9, 9];
 
-    let unionArr = union(&arr1, &arr2);
-    println!("the uion of arrs : arr1: {arr1:?} and arr2: {arr2:?} is {unionArr:?}");
+    let union_arr = union(&arr1, &arr2);
+    println!("the uion of arrs : arr1: {arr1:?} and arr2: {arr2:?} is {union_arr:?}");
 }
